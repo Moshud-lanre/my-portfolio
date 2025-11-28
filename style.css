@@ -1,0 +1,135 @@
+/* Basic Reset and Variables */
+:root {
+    --primary-color: #007bff; /* A clean blue */
+    --secondary-color: #6c757d; /* Gray for text */
+    --background-color: #f8f9fa; /* Light gray background */
+    --card-background: #ffffff; /* White background for sections/cards */
+    --text-color: #343a40; /* Dark text */
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Utility Class */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding {
+    padding: 60px 0;
+}
+
+/* --- Header / Hero Section --- */
+#hero {
+    background: var(--primary-color);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#hero h1 {
+    margin-bottom: 5px;
+    font-size: 3em;
+}
+
+#hero p {
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+/* --- Main Sections (Bio, Projects, Contact) --- */
+section {
+    background-color: var(--card-background);
+}
+
+h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+/* --- Projects Grid --- */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-item {
+    background: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 280px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+.project-item h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.project-item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+
+/* --- Contact Section --- */
+#contact p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* --- Footer --- */
+footer {
+    background: var(--text-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* --- Separator Line --- */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+    margin: 0; /* Important to keep sections connected visually */
+}

@@ -42,3 +42,6 @@ Click the Save button.
 Wait for Deployment:
 
 GitHub will now start the automated deployment process. This usually takes 1 to 5 minutes.
+
+
+Hosted Portfolio URL - <https://moshud-lanre.github.io/my-portfolio/>
